@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Languages, languages } from "../..//assets/lang/i18n";
+import { Languages, languages } from "../../assets/lang/i18n";
 import AuthRouter from "../../routers/AuthRouter";
 
 const Header = () => {

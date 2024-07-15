@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { useAuthStore } from "../store/authStore";
+import { useAuthStore } from "../../store/authStore";
 
 interface LoginFormInput {
   email: string;
@@ -45,7 +45,7 @@ const LoginForm: React.FC = () => {
           <label className="block-label" htmlFor="email">이메일</label>
           <input
             id="email"
-            {...register('email', { required: "이메일을 입력하세요" })}
+            {...register('email', { required: true })}
             type="text"
           />
           {errors.email && <p>이메일을 입력하세요</p>}

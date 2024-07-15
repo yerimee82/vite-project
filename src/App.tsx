@@ -1,6 +1,6 @@
 import "./assets/css/main.css";
-import Header from "./components/includes/Header";
-import Footer from "./components/includes/Footer";
+import Header from "./components/layouts/Header";
+import Footer from "./components/layouts/Footer";
 import NavRouter from "./routers/NavRouter";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/main/Home";

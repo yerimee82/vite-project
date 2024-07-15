@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Navigation from '../components/includes/Navigation';
+import Navigation from '../components/layouts/Navigation';
 import { Route, Routes} from 'react-router-dom';
 import GuestBook from '../pages/GuestBook';
 import Board from '../pages/Board';
