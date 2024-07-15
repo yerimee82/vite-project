@@ -2,9 +2,8 @@ import React from 'react'
 
 import Navigation from '../components/includes/Navigation';
 import { Route, Routes} from 'react-router-dom';
-import GuestBook from '../components/GuestBook';
-import Board from '../components/Board';
-import Home from '../pages/main/Home';
+import GuestBook from '../pages/GuestBook';
+import Board from '../pages/Board';
 
 const NavRouter = () => {
   return (

@@ -33,7 +33,7 @@ const LoginForm: React.FC = () => {
           const result = await response.json();
           login({ ...result, password: undefined }); // 비밀번호는 제거
           navigate('/'); // 로그인 성공 시 홈 페이지로 이동
-          
+
       } catch (error) {
         console.error('로그인 실패:', error);
         setLoginFailed(true);
@@ -41,7 +41,6 @@ const LoginForm: React.FC = () => {
     };
   
     return (
-      <div id="user">
         <form id="login-form" onSubmit={handleSubmit(onSubmit)}>
           <label className="block-label" htmlFor="email">이메일</label>
           <input
@@ -64,7 +63,6 @@ const LoginForm: React.FC = () => {
           )}
           <input type="submit" value="로그인" />
         </form>
-      </div>
     );
   };
   

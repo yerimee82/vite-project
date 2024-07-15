@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 
 
 const AuthMenu: React.FC = () => {
-  const { isAuthenticated, user} = useAuthStore();
+  const { isAuthenticated, user, logout} = useAuthStore();
+
+  const handleLogout = () => {
+    logout();
+  }
 
   return (
     <ul>
@@ -23,7 +27,7 @@ const AuthMenu: React.FC = () => {
             <Link to="/user/update">회원정보수정</Link>
           </li>
           <li>
-            <Link to="/user/logout">로그아웃</Link>
+            <Link to="/" onClick={handleLogout}>로그아웃</Link>
           </li>
           <li>{user?.name}님 안녕하세요 ^^;</li>
         </>

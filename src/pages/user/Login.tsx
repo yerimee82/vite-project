@@ -1,15 +1,15 @@
 import React from "react";
 import "../../assets/css/user.css";
-import JoinForm from "../../components/JoinForm";
+import LoginForm from "../../components/LoginForm";
 
-const Join = () => {
+const Login = () => {
   return (
     <div id="content">
       <div id="user">
-        <JoinForm />
+        <LoginForm />
       </div>
     </div>
   );
 };
 
-export default Join;
+export default Login;
