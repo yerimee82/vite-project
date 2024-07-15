@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Languages, languages } from "../..//assets/lang/i18n";
-import AuthMenu from "./AuthMenu";
 import AuthRouter from "../../routers/AuthRouter";
 
 const Header = () => {
@@ -25,7 +24,7 @@ const Header = () => {
           </button>
         ))}
       </div>
-      <AuthRouter/>
+      <AuthRouter />
     </div>
   );
 };

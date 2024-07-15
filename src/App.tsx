@@ -4,6 +4,7 @@ import Footer from "./components/includes/Footer";
 import NavRouter from "./routers/NavRouter";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/main/Home";
+import AuthRouter from "./routers/AuthRouter";
 
 const App: React.FC = () => {
 

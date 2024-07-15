@@ -1,7 +1,9 @@
 import { create } from "zustand";
 
 interface User {
+  no: number;
   name: string;
+  email: string;
   role: "admin" | "user";
 }
 
