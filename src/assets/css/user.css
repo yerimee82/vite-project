@@ -34,4 +34,26 @@ input[type="submit"]	{ display:block; width:80px; margin:20px auto }
 	color: #f00;
 	text-align: left !important;
 	padding: 0 !important;
+	height: 20px; 
+}
+  
+  .input-container {
+	margin-bottom: 10px;
+  }
+  
+  fieldset {
+	border: none;
+	margin-bottom: 15px; 
+  }
+  
+  button#btn-check {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+	display: block;
+	width: 80px;
+	margin: 20px auto;
   }

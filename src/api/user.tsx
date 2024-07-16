@@ -70,3 +70,19 @@ export const loginUser = async (
   const result: LoginResponse = await response.json();
   return result;
 };
+
+export const updateUser = async (user: Partial<LoginResponse>): Promise<void> => {
+    const url = `http://localhost:8088/mysite6/user/update`;
+  
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(user),
+    });
+
+    console.log(response);
+  
+    if (!response.ok) {
+      throw new Error('업데이트 실패');
+    }
+  };
